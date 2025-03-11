@@ -31,7 +31,7 @@
   <div class="video-container">
       <a href="https://www.youtube.com/watch?v=7uHk07dQGO0" target="_blank" aria-label="YouTube - Syracouse Affair teaser">
           <video bind:this={video} autoplay loop muted playsinline>
-              <source src="/video/video.mp4" type="video/mp4">
+              <source src="/video/video_small.mp4" type="video/mp4">
           </video>
       </a>
       <button class="audio-control" aria-label="toggle sound" on:click={toggleSound}>
