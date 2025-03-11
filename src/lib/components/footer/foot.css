@@ -1,0 +1,36 @@
+.footer-content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1000px;
+  height: 102px;
+  align-items: center;
+  background: #000000;
+}
+
+.footer {
+  width: 100%;
+  background: #000;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+  padding-top: 31px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer {height: 80px;}
+
+  .icons {
+    gap: 80px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .icons svg {transform: scale(0.75);}
+}

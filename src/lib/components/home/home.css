@@ -1,0 +1,76 @@
+.home {
+    width: 100%;
+    background-image: url('/webp/videoBackground.webp');
+    height: 1080px;
+    background-size: 1000px 1090px;
+    background-position: top left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    position: absolute;
+    top: 352px;
+    left: 179px;
+    width: 269px;
+    height: 214px;
+    object-fit: cover;
+    border-radius: 39px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.audio-control {
+    position: absolute;
+    background-image: url('/images/speaker-32.png');
+    top: 362px;
+    left: 482px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.audio-disabled-marker {
+    display: none;
+    height: 5px;
+    width: 32px;
+    background-color: red;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    transform: rotate(-22deg);
+    z-index: 1;
+}
+
+.audio-disabled {
+    display: block;
+}
+
+@media (max-width: 850px) {
+    video {
+        left: 48%;
+    }
+}
+
+@media (max-width: 440px) {
+    video {
+        left: 47%;
+        width: 210px;
+height: 167px;
+    }
+}

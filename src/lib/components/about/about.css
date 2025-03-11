@@ -1,0 +1,162 @@
+@font-face {
+  font-family: OldEnglishTextMT;
+  src: url(/fonts/OldEnglishTextMT.ttf);
+}
+@font-face {
+  font-family: OldNewspaperTypes;
+  src: url(/fonts/OldNewspaperTypes.ttf);
+}
+
+.about {
+  width: 788px;
+  background-image: url("/webp/newspaper_v2.webp");
+  background-size: 100% 100%;
+  background-position: center;
+  margin: 58px auto 80px auto;
+  padding-top: 129px;
+  padding-bottom: 100px;
+  background-color: none;
+}
+
+.aboutus-header {
+  margin: 0 80px;
+}
+
+.preImgs {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  gap: 50px;
+}
+
+.champions {
+  background-image: url("/webp/champions_v2.webp");
+  width: 570px;
+  height: 319px;
+
+  background-color: none;
+  background-size: cover;
+  background-position: center;
+}
+.cleanPlay {
+  background-image: url("/webp/cleanPlay_v2.webp");
+  width: 570px;
+  height: 313px;
+  background-color: none;
+  background-size: cover;
+  background-position: center;
+}
+.starsReach {
+  background-image: url("/webp/starsReach_v2.webp");
+  width: 570px;
+  height: 327px;
+  background-color: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.titleForAboutUs {
+  font-family: "OldEnglishTextMT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: center;
+  color: #000000;
+  margin: 0px;
+}
+
+hr {
+  width: 628px;
+  border: 4px solid #000000;
+}
+
+.aboutUsTextMain {
+  font-family: "OldNewspaperTypes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #000000;
+  margin: 0 58px;
+}
+
+.two-column {
+  column-count: 2;
+  column-gap: 50px;
+}
+
+.two-column::first-letter {
+  font-size: 96px;
+  line-height: 0.85em;
+  float: left;
+  margin-right: 15px;
+}
+
+.preWorks {
+  font-family: "OldNewspaperTypes";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #000000;
+}
+
+@media (max-width: 850px) {
+
+}
+
+@media (max-width: 650px) {
+    hr{
+border: 2px solid #000000;
+    }
+    .champions {
+width: 317px;
+height: 168px;
+}
+      .cleanPlay {
+width: 317px;
+height: 168px;
+}
+      .starsReach {
+width: 317px;
+height: 168px;
+}
+.aboutUsTextMain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 30px;
+  }
+
+      .titleForAboutUs {
+        font-size: 48px;
+        line-height: 48px;
+      }
+
+    .aboutUsTextLeft {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .aboutUsTextRight {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .aboutUsTextLeft::first-letter {
+        font-size: 96px;
+        line-height: 127px;
+        line-height: 0.8;
+      }
+
+      .preWorks {
+        font-size: 34px;
+        line-height: 45px;
+      }
+}
