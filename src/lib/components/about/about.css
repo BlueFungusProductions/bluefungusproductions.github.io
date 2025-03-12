@@ -2,161 +2,237 @@
   font-family: OldEnglishTextMT;
   src: url(/fonts/OldEnglishTextMT.ttf);
 }
+
 @font-face {
   font-family: OldNewspaperTypes;
   src: url(/fonts/OldNewspaperTypes.ttf);
 }
 
+
 .about {
-  width: 788px;
   background-image: url("/webp/newspaper_v2.webp");
   background-size: 100% 100%;
   background-position: center;
-  margin: 58px auto 80px auto;
-  padding-top: 129px;
-  padding-bottom: 100px;
-  background-color: none;
+  width: 788px;
+  padding: 129px 15px 100px 15px;
+  margin: 58px 15px 15px 15px;
 }
 
 .aboutus-header {
   margin: 0 80px;
 }
 
-.preImgs {
-  align-items: center;
+hr {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  border: 4px solid #000000;
+}
+
+/*texts*/
+.titleAbout {
+  font-family: "OldEnglishTextMT";
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
   text-align: center;
+  margin: 0px;
+}
+
+.textAbout {
+  display: block;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin: 26px 58px 0;
+  column-count: 2;
+  column-gap: 15px;
+}
+
+.textAbout::first-letter {
+  font-size: 96px;
+  line-height: 0.85em;
+  float: left;
+  margin-right: 3%;
+}
+
+.preWorks {
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.titleAbout,
+.textAbout,
+.preWorks {
+  font-style: normal;
+  color: #000000;
+}
+
+.textAbout,
+.preWorks {
+  font-family: "OldNewspaperTypes";
+  font-weight: 500;
+}
+
+
+/*pictures*/
+.imgs {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
   flex-direction: column;
-  position: relative;
   gap: 50px;
 }
 
 .champions {
   background-image: url("/webp/champions_v2.webp");
-  width: 570px;
   height: 319px;
-
-  background-color: none;
-  background-size: cover;
-  background-position: center;
 }
+
 .cleanPlay {
   background-image: url("/webp/cleanPlay_v2.webp");
-  width: 570px;
   height: 313px;
-  background-color: none;
-  background-size: cover;
-  background-position: center;
 }
+
 .starsReach {
   background-image: url("/webp/starsReach_v2.webp");
-  width: 570px;
   height: 327px;
-  background-color: none;
+}
+
+.champions,
+.cleanPlay,
+.starsReach {
   background-size: cover;
   background-position: center;
+  width: 570px;
 }
 
-.titleForAboutUs {
-  font-family: "OldEnglishTextMT";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 96px;
-  text-align: center;
-  color: #000000;
-  margin: 0px;
-}
-
-hr {
-  width: 628px;
-  border: 4px solid #000000;
-}
-
-.aboutUsTextMain {
-  font-family: "OldNewspaperTypes";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.2em;
-  color: #000000;
-  margin: 0 58px;
-}
-
-.two-column {
-  column-count: 2;
-  column-gap: 50px;
-}
-
-.two-column::first-letter {
-  font-size: 96px;
-  line-height: 0.85em;
-  float: left;
-  margin-right: 15px;
-}
-
-.preWorks {
-  font-family: "OldNewspaperTypes";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 64px;
-  text-align: center;
-  color: #000000;
-}
-
+/*Mobile*/
 @media (max-width: 850px) {
+  .about {
+    width: 688px;
+  }
+  
+  hr {
+    border: 3px solid #000000;
+  }
 
+  /*texts*/
+  .titleAbout {
+    font-size: 55px;
+    line-height: 48px;
+  }
+  
+  .textAbout {
+    font-size: 20px;
+    gap: 10px;
+  }
+  
+  .textAbout::first-letter {
+    font-size: 75px;
+    line-height: 0.8em;
+  }
+
+  /*pictures*/
+  .champions,
+  .cleanPlay,
+  .starsReach {
+    width: 461.7px;
+    height: 258.39px;
+  }
 }
 
-@media (max-width: 650px) {
-    hr{
-border: 2px solid #000000;
-    }
-    .champions {
-width: 317px;
-height: 168px;
-}
-      .cleanPlay {
-width: 317px;
-height: 168px;
-}
-      .starsReach {
-width: 317px;
-height: 168px;
-}
-.aboutUsTextMain {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+@media (max-width: 630px) {
+  .about {
+    width: 400px;
+    padding: 100px 0;
+  }
+
+  .aboutus-header {
+    margin: 0 50px;
+  }
+
+  hr {
+    border: 2px solid #000000;
+  }
+
+  /*texts*/
+  .titleAbout {
+    font-size: 48px;
+  }
+
+  .textAbout::first-letter {
+    font-size: 48px;
+    line-height: 127px;
+    line-height: 0.8;
+  }
+
+  .textAbout {
+    margin: 20px 30px 0;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    column-count: unset;
+  }
+
+  .preWorks {
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  /*pictures*/
+  .imgs {
     gap: 30px;
   }
 
-      .titleForAboutUs {
-        font-size: 48px;
-        line-height: 48px;
-      }
+  .champions,
+  .cleanPlay,
+  .starsReach {
+    width: 317px;
+    height: 168px;
+  }
+}
 
-    .aboutUsTextLeft {
-        font-size: 15px;
-        line-height: 20px;
-      }
 
-      .aboutUsTextRight {
-        font-size: 15px;
-        line-height: 20px;
-      }
+@media (max-width: 440px) {
+  .about {
+    width: 280px;
+    padding: 50px 0 70px;
+  }
 
-      .aboutUsTextLeft::first-letter {
-        font-size: 96px;
-        line-height: 127px;
-        line-height: 0.8;
-      }
+  .aboutus-header {
+    margin: 0 30px;
+  }
+  
+  
+  /*texts*/
+  .textAbout {
+    margin: 20px 25px 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-      .preWorks {
-        font-size: 34px;
-        line-height: 45px;
-      }
+  .textAbout::first-letter {
+    font-size: 38px;
+    line-height: 33px;
+  }
+
+  .preWorks {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+
+  /*pictures*/
+  .imgs {
+    gap: 20px;
+  }
+  .champions,
+  .cleanPlay,
+  .starsReach {
+    width: 240px;
+    height: 134.4px;
+  }
 }

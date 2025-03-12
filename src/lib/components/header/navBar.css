@@ -60,7 +60,7 @@
 
 .logo {
   width: 178px;
-  height: 59px;
+  height: 58px;
   display: flex;
   justify-content: flex-start;
   margin: 30px;
@@ -74,25 +74,6 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
-  /* .headerForNav {
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: fixed !important;
-    justify-content: center;
-    width: 100%;
-    height: 170px;
-    top: 0;
-    scroll-behavior: smooth;
-    overflow: hidden;
-  } */
-
-  .navText {
-    font-size: 28px;
-  }
-}
 
 @media (max-width: 850px) {
   .headerForNav {
@@ -114,6 +95,7 @@
     height: 120px;
 
   }
+
   /*button hamburger icon menu*/
   .mobile-nav-button {
     background-color: rgba(0, 0, 0, 0);
@@ -144,6 +126,7 @@
     margin: 12px;
     transition: 0.4s;
   }
+
   /* bars change */
   .change .bar1 {
     transform: translate(0, 18px) rotate(-45deg);
@@ -177,17 +160,20 @@
   .logo {
     width: 121px;
     height: 40px;
-    margin: 20px;
+    background-size: contain;
+    margin: 10px 20px 20px;
   }
+
   .headerForNav {
     height: 80px;
   }
+
   .bar1,
   .bar2,
   .bar3 {
-    width: 46px;
-    height: 5px;
-    margin: 8px;
+    width: 40px;
+    height: 4px;
+    margin: 7px;
   }
 
   .change .bar1 {
@@ -200,5 +186,9 @@
 
   .dropdown-content {
     top: 80px;
+  }
+  
+  .navText {
+    font-size: 20px;
   }
 }

@@ -1,8 +1,4 @@
-<script>
-    import "./foot.css";
-</script>
-
-<footer class="footer">
+<footer>
   <div class="footer-content">
     <div class="icons">
       <!-- linkedin logo -->
@@ -21,3 +17,44 @@
     </div>
   </div>
 </footer>
+
+<style>
+  footer {
+    width: 100%;
+    background: #000;
+  }
+  
+  .footer-content {
+    width: 100%;
+    max-width: 1000px;
+    height: 102px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+    padding: 31px 0 20px 0;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      height: 80px;
+    }
+
+    .icons {
+      gap: 80px;
+      padding: 25px 0 10px;
+    }
+
+    .icons svg {
+      transform: scale(0.75);
+    }
+  }
+</style>

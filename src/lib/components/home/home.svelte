@@ -26,15 +26,14 @@
       }
   };
 </script>
-
-<div class="home">
+<div class="home" style:background-image="url('./webp/videoBackground.webp')" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
   <div class="video-container">
       <a href="https://www.youtube.com/watch?v=7uHk07dQGO0" target="_blank" aria-label="YouTube - Syracouse Affair teaser">
-          <video bind:this={video} autoplay loop muted playsinline>
-              <source src="/video/video_small.mp4" type="video/mp4">
-          </video>
+        <video bind:this={video} autoplay loop muted playsinline preload="metadata">
+            <source src="/video/video_small.mp4" type="video/mp4">
+        </video>
       </a>
-      <button class="audio-control" aria-label="toggle sound" on:click={toggleSound}>
+      <button class="audio-control" style:background-image="url('./images/speaker-32.png')" aria-label="toggle sound" on:click={toggleSound}>
           <div class="audio-disabled-marker audio-disabled" id="audio-disabled"></div>
       </button>
   </div>

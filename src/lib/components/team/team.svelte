@@ -1,7 +1,7 @@
 <div class="team">
   <p class="team-title">Team</p>
-  <div style:overflow="hidden" style:height="1950px">
-      <div class="team-portraits">
+  <div style:padding-top="35px" style:padding-bottom="35px">
+      <div class="team-portraits" >
           <div class="portrait-background aron">
               <div class="portrait-image" style:width="300px" style:height="300px" style:background-image="url('/webp/aron.webp')"></div>
               <div class="portrait-text">Aron</div>
@@ -11,7 +11,7 @@
               <div class="portrait-text">evik</div>
           </div>
           <div class="portrait-background reka">
-              <div class="portrait-image" style:width="245px" style:height="245px" style:background-image="url('/webp/reka.webp')"></div>
+              <div class="portrait-image" style:width="244px" style:height="244px" style:background-image="url('/webp/reka.webp')"></div>
               <div class="portrait-text">Reka</div>
           </div>
           <div class="portrait-background anna">
@@ -36,6 +36,11 @@
 
 
 <style>
+.team-portraits{
+  height: 2000px;
+  margin-left:-450px;
+}
+
 .aron {
   width: 352px;
   height: 417px;
@@ -99,10 +104,26 @@
   z-index: 0;
 }
 
+.portrait-background {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.7));
+}
+
+.portrait-image {
+  background-position: center;
+  margin: 0 auto 10px auto;
+}
+
 .team {
-  width: 900px;
-  margin: 0 auto;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-title {
@@ -115,22 +136,6 @@
   margin-bottom: 100px;
 }
 
-.portrait-background {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.7));
-}
-
-.portrait-image {
-  /* background-color: #fff; */
-  background-position: center;
-  margin: 0 auto 10px auto;
-}
-
 .portrait-text {
   font-family: "FuzzyBubbles";
   font-weight: 400;
@@ -138,6 +143,41 @@
   text-align: center;
   color: #000;
   margin: 0 auto;
+}
+
+/*MOBILE*/
+@media (max-width: 850px) {
+  .team-portraits {
+    transform: scale(0.5);
+    margin-left:-300px;
+    margin-top: -420px;
+    height: 1350px;
+  }
+
+  .team {
+    padding-top:10px;
+  }
+}
+
+
+@media(max-width: 440px){
+  .team-portraits {
+    height: 1200px;
+    transform: scale(0.3);
+    margin-left:-200px;
+    margin-top: -450px;
+    margin-bottom: -180px;
+  }
+
+  .portrait-image {
+    width:246px !important;
+    height:236px !important;
+  }
+
+  .team-title {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
 }
 </style>
 
