@@ -11,19 +11,8 @@
         <hr />
       </div>
           <p class="textAbout">
-            Lorem ipsum dolor sit amecingelit, sed do eiusmount ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa
-          
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat
+            Blue Fungus develops innovative new game platforms and showcase experiences that highlight what they can do. We consist of experts across AAA and casual, PC and mobile, emphasizing multiplayer experiences, user generated content, and most importantly fun. We are currently developing our own new product, but welcome opportunities to collaborate with other like minded pioneers. 
+            Drop us a line <a href="mailto:info@bluefung.us?subject=Inquiry%20from%20Website&body=Hi%20Bluefungus%20Team%2C%0A%0AI%20came%20across%20your%20site%20and%20wanted%20to%20learn%20more%20about%20what%20you%20offer.%0A%0ABest%2C%0A[Your%20Name]">Contact Us!</a>
           </p>
     </section>
     <section id="reference">
