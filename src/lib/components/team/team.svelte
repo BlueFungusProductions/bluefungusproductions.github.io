@@ -6,6 +6,10 @@
               <div class="portrait-image" style:width="300px" style:height="300px" style:background-image="url('/webp/aron.webp')"></div>
               <div class="portrait-text">Aron</div>
           </div>
+          <div class="portrait-background zimran">
+              <div class="portrait-image" style:width="300px" style:height="300px" style:background-image="url('/webp/zimran.webp')"></div>
+              <div class="portrait-text">Zimran</div>
+          </div>
           <div class="portrait-background evik">
               <div class="portrait-image" style:width="260px" style:height="260px" style:background-image="url('/webp/evik.webp')"></div>
               <div class="portrait-text">evik</div>
