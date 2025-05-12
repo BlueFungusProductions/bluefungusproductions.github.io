@@ -1,138 +1,142 @@
 .home {
-    background-size: 1000px 1090px;
-    background-position: top left;
-    width: 100%;
-    height: 1070px;
+  width: 100%;
+  height: 1070px;
+  background-size: 1000px 1090px;
+  background-position: top left;
 }
 
 .home::before {
-    display: flex;
-    justify-content: center;
-    content: '';
-    position:absolute;
-    top: 0;
-    width: 100%;
-    max-width: 1456px;
-    height: 1090px;
-    background-image: radial-gradient(circle, transparent 30%, rgb(12, 12, 12) 55%);
-    filter: blur(10px); 
-  }
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  content: "";
+  top: 0;
+  width: 100%;
+  max-width: 1456px;
+  height: 1090px;
+  background-image: radial-gradient(
+    circle,
+    transparent 30%,
+    rgb(12, 12, 12) 55%
+  );
+  filter: blur(10px);
+}
 
 .video-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 video {
-    position: absolute;
-    top: 352px;
-    left: 179px;
-    width: 269px;
-    height: 214px;
-    object-fit: cover;
-    border-radius: 39px; 
-    overflow: hidden;
-    box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
-    cursor: pointer;
+  position: absolute;
+  top: 352px;
+  left: 179px;
+  width: 269px;
+  height: 214px;
+  object-fit: cover;
+  border-radius: 39px;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 .audio-control {
-    position: absolute;
-    top: 362px;
-    left: 482px;
-    width: 32px;
-    height: 32px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 362px;
+  left: 482px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .audio-disabled-marker {
-    display: none;
-    height: 5px;
-    width: 32px;
-    background-color: red;
-    position: absolute;
-    top: 14px;
-    left: 0px;
-    transform: rotate(-22deg);
-    z-index: 1;
+  position: absolute;
+  display: none;
+  height: 5px;
+  width: 32px;
+  background-color: red;
+  top: 14px;
+  left: 0px;
+  transform: rotate(-22deg);
+  z-index: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .audio-disabled {
-    display: block;
+  display: block;
 }
 
-/*MOBILE*/
 @media (max-width: 850px) {
-    .home {
-        background-size: calc(1000px * 0.8) calc(1090px * 0.8);
-        max-height: calc(1090px * 0.8);
-    }
+  .home {
+    background-size: 800px 872px;
+    max-height: 872px;
+  }
 
-    .home::before{
-        max-height: calc(1090px * 0.8);
-    }
+  .home::before {
+    max-height: 872px;
+  }
 
-    video {
-        top: 280px;
-        left: 143px;
-        width: 215px;
-        height: 180px;
-        object-fit: cover;
-    }
+  video {
+    top: 280px;
+    left: 143px;
+    width: 215px;
+    height: 180px;
+    object-fit: cover;
+  }
 
-    .audio-control {
-        top: 290px;
-        left: 385px;
-        width: 22px; 
-        height: 22px;
-        background-size: contain;
-    }
+  .audio-control {
+    top: 290px;
+    left: 385px;
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+  }
 
-    .audio-disabled-marker {
-        width: 30px;
-        top: 9px;
-        height: 3px;
-    }
+  .audio-disabled-marker {
+    width: 30px;
+    top: 9px;
+    height: 3px;
+  }
 }
 
 @media (max-width: 440px) {
-    .home {
-        background-size: calc(1000px * 0.5) calc(1090px * 0.5);
-        max-height: calc(1090px * 0.5);
-    }
+  .home {
+    background-size: 500px 545px;
+    max-height: 545px;
+  }
 
-    .home::before {
-        max-height: calc(1090px * 0.5);
-    }
+  .home::before {
+    max-height: 545px;
+  }
 
-    video {
-        top: 175px;
-        left: 85px;
-        width: 145px;
-        height: 115px;
-        object-fit: cover;
-    }
+  video {
+    top: 175px;
+    left: 85px;
+    width: 145px;
+    height: 115px;
+    object-fit: cover;
+  }
 
-    .audio-control {
-        top: 178px;
-        left: 240px;
-        width: 18px; 
-        height: 18px;
-        background-size: contain;
-    }
-    
-    .audio-disabled-marker {
-        width: 28px;
-        top: 6px;
-        left: -6px;
-        height: 2px;
-    }
+  .audio-control {
+    top: 178px;
+    left: 240px;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+
+  .audio-disabled-marker {
+    width: 28px;
+    top: 6px;
+    left: -6px;
+    height: 2px;
+  }
 }
